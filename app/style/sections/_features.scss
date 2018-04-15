@@ -1,0 +1,90 @@
+.features {
+    min-height: 450px;
+    .features__item {
+        text-align: center;
+        padding: 50px 0 65px;
+        .features__item--ring {
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 40px;
+            border: 2px solid #e5e3e3;
+            border-radius: 50%;
+            padding: 65px 40px;
+            position: relative;
+            .ring__content {
+                width: 135px;
+                height: 99px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -67.5px;
+                margin-top: -49.5px;
+
+
+
+                span {
+                    display: block;
+                }
+
+                .number {
+                    font-size: 72px;
+                    font-weight: 700;
+                    height: 55px;
+                    line-height: 55px;
+                    margin-bottom: 17px;
+                }
+
+                .description {
+                    font-size: 18px;
+                    text-transform: uppercase;
+
+                }
+            }
+        }
+
+        .first {
+            border-left: 4px solid #f34739;
+            border-bottom: 4px solid #f34739;
+            .number {
+                color: #f34739;
+            }
+        }
+
+        .second {
+            border-bottom: 4px solid #59bdb2;
+            transform: rotate(45deg);
+            .ring__content {
+                transform: rotate(315deg);
+
+                .number {
+                    color: #59bdb2;
+
+                }
+            }
+
+        }
+        
+        .third {
+            border-top: 4px solid #152b3c;
+            border-left: 4px solid #152b3c;
+            border-bottom: 4px solid #152b3c;
+            transform: rotate(45deg);
+            .ring__content {
+                transform: rotate(315deg);
+
+                .number {
+                    color: #152b3c;
+
+                }
+            }
+            
+        }
+
+        .feature__item--descr {
+            width: 220px;
+            margin: 0 auto;
+
+        }
+    }
+
+}
