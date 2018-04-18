@@ -1,14 +1,15 @@
-.footer{
+.footer {
     min-height: 300px;
     background-color: #101010;
     color: #fff;
     padding: 50px 0 0;
     text-align: center;
-    .footer__item{
-        h3{
+    transition: .5s cubic-bezier(.75, .02, .33, 1);
+    .footer__item {
+        h3 {
             position: relative;
             margin-bottom: 50px;
-            &:after{
+            &:after {
                 content: '';
                 width: 140px;
                 height: 1px;
@@ -20,14 +21,14 @@
                 margin-left: -70px;
             }
         }
-        .footetr__item--descr{
+        .footetr__item--descr {
             width: 140px;
             margin: 0 auto;
             color: #4a4a4a;
             margin-bottom: 35px;
         }
     }
-    .copyright{
+    .copyright {
         height: 60px;
         width: 100%;
         padding-top: 25px;
@@ -37,5 +38,7 @@
         font-weight: 300;
         color: #4a4a4a;
     }
+    &.menu_open {
+        transform: translateX(-25%);
+    }
 }
-

@@ -1,4 +1,5 @@
 .features {
+    transition: .5s cubic-bezier(.75, .02, .33, 1);
     min-height: 450px;
     .features__item {
         text-align: center;
@@ -34,9 +35,7 @@
                     text-transform: uppercase;
                 }
             }
-    
         }
-
         .first {
             border-left: 4px solid #f34739;
             border-bottom: 4px solid #f34739;
@@ -44,21 +43,16 @@
                 color: #f34739;
             }
         }
-
         .second {
             border-bottom: 4px solid #59bdb2;
             transform: rotate(45deg);
             .ring__content {
                 transform: rotate(315deg);
-
                 .number {
                     color: #59bdb2;
-
                 }
             }
-
         }
-        
         .third {
             border-top: 4px solid #152b3c;
             border-left: 4px solid #152b3c;
@@ -66,20 +60,17 @@
             transform: rotate(45deg);
             .ring__content {
                 transform: rotate(315deg);
-
                 .number {
                     color: #152b3c;
-
                 }
             }
-            
         }
-
         .feature__item--descr {
             width: 220px;
             margin: 0 auto;
-
         }
     }
-
+    &.menu_open {
+        transform: translateX(-25%);
+    }
 }

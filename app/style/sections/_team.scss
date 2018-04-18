@@ -1,118 +1,76 @@
-.team__header {
-
-    background-image: url(../img/bg2.jpg);
-
-    .team__header--descr {
-        width: 1200px;
-        height: 200px;
-        border: 3px solid #fff;
-        margin: 0 auto;
-        padding: 65px 0;
-        .content__title {
-            width: 240px;
+.team {
+    transition: .5s cubic-bezier(.75, .02, .33, 1);
+    .team__header {
+        background-image: url(../img/bg2.jpg);
+        .team__header--descr {
+            width: 1200px;
+            height: 200px;
+            border: 3px solid #fff;
             margin: 0 auto;
-            position: relative;
-            &:before,
-            &:after {
-                content: '';
-                width: 60px;
-                height: 1px;
-                background-color: #fff;
-                position: absolute;
-                z-index: 90;
-            }
-            &:before {
-                top: 50%;
-                left: 5px;
-            }
-            &:after {
-                top: 50%;
-                right: 5px;
-            }
-
-        }
-    }
-}
-
-.team__members {
-    padding: 50px 0;
-    .team__members--item {
-        min-height: 300px;
-        .member__foto {
-            height: 300px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 20px 0 20px 20px;
-            .member__foto--line {
-                height: 255px;
-                border: 4px solid #fff;
-                border-right: 0;
-            }
-        }
-
-        .adriana {
-            background-image: url(../img/adriana.jpg);
-        }
-
-        .olivia {
-            background-image: url(../img/olivia.jpg);
-        }
-        .thomas {
-            background-image: url(../img/thomas.jpg);
-        }
-
-        .taylor {
-            background-image: url(../img/thaylor.jpg);
-        }
-        .member__descr {
-            height: 300px;
-            padding: 20px 20px 20px 0;
-            position: relative;
-            .member__descr--line {
-                height: 255px;
-                border: 4px solid #000;
-                border-left: 0;
-                text-align: center;
-                padding-top: 25px;
-
-
-            }
-
-            &:before {
-                content: '';
-                width: 50px;
-                height: 50px;
-                background-color: #fff;
-                transform: rotate(45deg);
-                position: absolute;
-                z-index: 90;
-                top: 50%;
-                margin-top: -35px;
-                left: -25px;
-            }
-        }
-
-        &:nth-of-type(2n) {
-            flex-flow: row-reverse;
-            .member__foto {
-                padding: 20px 20px 20px 0;
-                .member__foto--line {
-                    border-left: 0;
-                    border-right: 4px solid #fff;
-                }
-            }
-            .member__descr {
-                padding: 20px 0 20px 20px;
-                .member__descr--line {
-                    border-right: 0;
-                    border-left: 4px solid #000;
+            padding: 65px 0;
+            .content__title {
+                width: 240px;
+                margin: 0 auto;
+                position: relative;
+                &:before,
+                &:after {
+                    content: '';
+                    width: 60px;
+                    height: 1px;
+                    background-color: #fff;
+                    position: absolute;
+                    z-index: 90;
                 }
                 &:before {
-                    width: 0;
-                    height: 0;
-
+                    top: 50%;
+                    left: 5px;
                 }
                 &:after {
+                    top: 50%;
+                    right: 5px;
+                }
+            }
+        }
+    }
+    .team__members {
+        padding: 50px 0;
+        .team__members--item {
+            min-height: 300px;
+            .member__foto {
+                height: 300px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 20px 0 20px 20px;
+                .member__foto--line {
+                    height: 255px;
+                    border: 4px solid #fff;
+                    border-right: 0;
+                }
+            }
+            .adriana {
+                background-image: url(../img/adriana.jpg);
+            }
+            .olivia {
+                background-image: url(../img/olivia.jpg);
+            }
+            .thomas {
+                background-image: url(../img/thomas.jpg);
+            }
+            .taylor {
+                background-image: url(../img/thaylor.jpg);
+            }
+            .member__descr {
+                height: 300px;
+                padding: 20px 20px 20px 0;
+                position: relative;
+                .member__descr--line {
+                    height: 255px;
+                    border: 4px solid #000;
+                    border-left: 0;
+                    text-align: center;
+                    padding-top: 25px;
+                }
+                &:before {
                     content: '';
                     width: 50px;
                     height: 50px;
@@ -122,43 +80,72 @@
                     z-index: 90;
                     top: 50%;
                     margin-top: -35px;
-                    right: -25px;
+                    left: -25px;
                 }
             }
-
-
+            &:nth-of-type(2n) {
+                flex-flow: row-reverse;
+                .member__foto {
+                    padding: 20px 20px 20px 0;
+                    .member__foto--line {
+                        border-left: 0;
+                        border-right: 4px solid #fff;
+                    }
+                }
+                .member__descr {
+                    padding: 20px 0 20px 20px;
+                    .member__descr--line {
+                        border-right: 0;
+                        border-left: 4px solid #000;
+                    }
+                    &:before {
+                        width: 0;
+                        height: 0;
+                    }
+                    &:after {
+                        content: '';
+                        width: 50px;
+                        height: 50px;
+                        background-color: #fff;
+                        transform: rotate(45deg);
+                        position: absolute;
+                        z-index: 90;
+                        top: 50%;
+                        margin-top: -35px;
+                        right: -25px;
+                    }
+                }
+            }
+        }
+        .descr__title {
+            position: relative;
+            margin-bottom: 30px;
+            .name {
+                display: block;
+                text-transform: uppercase;
+                font-size: 36px;
+            }
+            .role {
+                font-size: 16px;
+            }
+            &:after {
+                content: '';
+                width: 180px;
+                height: 3px;
+                background-color: #f34739;
+                position: absolute;
+                left: 50%;
+                margin-left: -90px;
+                top: 92px;
+            }
+        }
+        .descr__text {
+            width: 320px;
+            margin: 0 auto;
+            font-size: 20px;
         }
     }
-    .descr__title {
-        position: relative;
-        margin-bottom: 30px;
-        .name {
-            display: block;
-            text-transform: uppercase;
-            font-size: 36px;
-        }
-        .role {
-            font-size: 16px;
-
-        }
-
-        &:after {
-            content: '';
-            width: 180px;
-            height: 3px;
-            background-color: #f34739;
-            position: absolute;
-            left: 50%;
-            margin-left: -90px;
-            top: 92px;
-
-        }
-
-    }
-
-    .descr__text {
-        width: 320px;
-        margin: 0 auto;
-        font-size: 20px;
+    &.menu_open {
+        transform: translateX(-25%);
     }
 }
