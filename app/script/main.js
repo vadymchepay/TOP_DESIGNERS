@@ -1,4 +1,13 @@
 jQuery(document).ready(function () {
+    document.body.onload = function(){
+        setTimeout(function(){
+            if (!$('.preloader').hasClass('done')){
+                $('.preloader').addClass('done')
+            }
+        },1000)
+    };
+    
+    
     var $listMenu = $('.header__content--menu ul li');
     var $menuItem = $('.header__content--menu ul li a');
     $('.burger__click').click(function () {
