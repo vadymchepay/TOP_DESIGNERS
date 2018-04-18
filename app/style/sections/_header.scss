@@ -122,7 +122,7 @@
                     z-index: 1;
                     cursor: pointer;
                     position: relative;
-                    display: block;
+                    display: flex;
                     span {
                         position: relative;
                         display: block;
@@ -152,7 +152,7 @@
                         }
                     }
                     .burger__click {
-                        width: 30px;
+                        width: 110px;
                         height: 30px;
                         position: absolute;
                         top: 5px;
@@ -174,12 +174,13 @@
                             }
                         }
                     }
+                    .burger__menu {
+                        margin-left: 20px;
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
                 }
-                .burger__menu {
-                    margin-left: 20px;
-                    font-size: 20px;
-                    font-weight: 300;
-                }
+
             }
         }
     }
@@ -283,7 +284,7 @@
                         transform: scale(1.2, 1.2);
                     }
                 }
-                &::after {
+                .arrows__down {
                     content: '';
                     position: absolute;
                     width: 22px;
@@ -294,11 +295,12 @@
                     left: 50%;
                     margin-left: -11px;
                     bottom: -65px;
+                    transition: 0.3s;
+                    &:hover{
+                        transform: scale(1.2, 1.2);
+                    }
                 }
-                &:hover::after {
-                    
-                    bottom: -100px;
-                }
+                
             }
         }
     }

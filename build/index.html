@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="libs/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/animate.css">
     <link rel="stylesheet" href="css/main.min.css"> </head>
 
 <body>
+<!--   Preloader starts-->
     <div class="preloader">
         <div class="preloader__loader">
             <div class="caption">
@@ -23,7 +25,10 @@
             </div>
         </div>
     </div>
-    <header class="header" id="header">
+<!--    Preloader ends-->
+<!--   Header starts-->
+    <header class="header" id="a-header">
+<!--       Top bar starts-->
         <div class="header__menu">
             <div class="container-fluid">
                 <div class="row">
@@ -53,48 +58,54 @@
                     <div class="col-lg-3 header__menu--nav">
                         <div class="header__menu--nav-btn">
                             <div class="burger">
-                                <div class="burger__click"></div> <span></span> </div> <span class="burger__menu">MENU</span> </div>
+                                <div class="burger__click"></div> <span></span>  <div class="burger__menu">MENU</div> </div>
+                                </div>
                     </div>
                 </div>
             </div>
         </div>
+<!--        Top bar ends-->
         <div class="header__content">
             <div class="header__content--menu">
                 <ul>
-                    <li><a href="#header">HOME</a></li>
-                    <li><a href="#features">FEATURES</a></li>
-                    <li><a href="#team">TEAM</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#brands">BRANDS</a></li>
+                    <li><a href="#a-header">HOME</a></li>
+                    <li><a href="#a-features">FEATURES</a></li>
+                    <li><a href="#a-team">TEAM</a></li>
+                    <li><a href="#a-portfolio">PORTFOLIO</a></li>
+                    <li><a href="#a-brands">BRANDS</a></li>
                 </ul>
             </div>
             <div class="header__slider">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="header__slider--content col-lg-12">
+                        <div class="header__slider--content col-lg-12 wow fadeInDown" data-wow-delay="1.5s">
                             <div class="content__title"> <span>Need our help?</span></div>
-                            <h1>TOP DESIGNERS</h1> <a href="#" class="button">Check us</a> </div>
+                            <h1>TOP DESIGNERS</h1> <a href="#" class="button">Check us</a> 
+                            <div class="arrows__down"></div>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="features" id="features">
+<!--    Header ends-->
+<!--   Features section starts-->
+    <section class="features" id="a-features">
         <div class="container">
             <div class="row">
-                <div class="features__item col-lg-4">
+                <div class="features__item col-lg-4 wow fadeInUpBig" data-wow-offset="200">
                     <div class="features__item--ring first">
                         <div class="ring__content"> <span class="number">50</span> <span class="description">Big projects</span> </div>
                     </div>
                     <div class="feature__item--descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quasi cumque debitis, labore neque, reiciendis placeat possimus enim, </div>
                 </div>
-                <div class="features__item col-lg-4">
+                <div class="features__item col-lg-4 wow fadeInUpBig"  data-wow-offset="200">
                     <div class="features__item--ring second">
                         <div class="ring__content"> <span class="number">35</span> <span class="description">Clients</span> </div>
                     </div>
                     <div class="feature__item--descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quasi cumque debitis, labore neque, reiciendis placeat possimus enim, </div>
                 </div>
-                <div class="features__item col-lg-4">
+                <div class="features__item col-lg-4 wow fadeInUpBig"  data-wow-offset="200">
                     <div class="features__item--ring third">
                         <div class="ring__content"> <span class="number">80</span> <span class="description">month</span> </div>
                     </div>
@@ -103,8 +114,10 @@
             </div>
         </div>
     </section>
-    <section class="team" id="team">
-        <div class="section__header team__header">
+    <!--    Features section ends-->
+<!--    Team section starts-->
+    <section class="team" id="a-team">
+        <div class="section__header team__header wow zoomIn" data-wow-offset="200">
             <div class="container">
                 <div class="row">
                     <div class="section__header--descr col-lg-12">
@@ -119,21 +132,20 @@
         <div class="team__members">
             <div class="container">
                 <div class="row team__members--item">
-                    <div class="col-lg-6 col-12 member__foto adriana">
+                    <div class="col-lg-6 col-12 member__foto adriana wow fadeInLeftBig" data-wow-offset="200">
                         <div class="member__foto--line"></div>
                     </div>
-                    <div class="col-lg-6 col-12 member__descr">
-                        <div class="member__descr--line">
+                    <div class="col-lg-6 col-12 member__descr wow fadeInRightBig" data-wow-offset="200">                        <div class="member__descr--line">
                             <div class="descr__title"> <span class="name">Adriana</span> <span class="role">Senior graphic designer</span> </div>
                             <div class="descr__text"> She is graphic designer with 3 years of proffecional expirience </div>
                         </div>
                     </div>
                 </div>
                 <div class="row team__members--item">
-                    <div class="col-lg-6 col-12 member__foto olivia">
+                    <div class="col-lg-6 col-12 member__foto olivia wow fadeInRightBig" data-wow-offset="200">
                         <div class="member__foto--line"></div>
                     </div>
-                    <div class="col-lg-6 col-12 member__descr">
+                    <div class="col-lg-6 col-12 member__descr wow fadeInLeftBig" data-wow-offset="200">
                         <div class="member__descr--line">
                             <div class="descr__title"> <span class="name">Olivia</span> <span class="role">Art Director</span> </div>
                             <div class="descr__text"> She is the art director with 8 years of proffecional expirience </div>
@@ -141,10 +153,10 @@
                     </div>
                 </div>
                 <div class="row team__members--item">
-                    <div class="col-lg-6 col-12 member__foto thomas">
+                    <div class="col-lg-6 col-12 member__foto thomas wow fadeInLeftBig" data-wow-offset="200">
                         <div class="member__foto--line"></div>
                     </div>
-                    <div class="col-lg-6 col-12 member__descr">
+                    <div class="col-lg-6 col-12 member__descr wow fadeInRightBig" data-wow-offset="200">
                         <div class="member__descr--line">
                             <div class="descr__title"> <span class="name">Thomas</span> <span class="role">Software Engeneer</span> </div>
                             <div class="descr__text"> He is Software Engeneer with 5 years of proffecional expirience </div>
@@ -152,10 +164,10 @@
                     </div>
                 </div>
                 <div class="row team__members--item">
-                    <div class="col-lg-6 col-12 member__foto taylor">
+                    <div class="col-lg-6 col-12 member__foto taylor wow fadeInRightBig" data-wow-offset="200">
                         <div class="member__foto--line"></div>
                     </div>
-                    <div class="col-lg-6 col-12 member__descr">
+                    <div class="col-lg-6 col-12 member__descr wow fadeInLeftBig" data-wow-offset="200">
                         <div class="member__descr--line">
                             <div class="descr__title"> <span class="name">Taylor</span> <span class="role">CEO</span> </div>
                             <div class="descr__text"> She is the boss in here </div>
@@ -165,8 +177,10 @@
             </div>
         </div>
     </section>
-    <section class="portfolio" id="portfolio">
-        <div class="section__header portfolio__header">
+<!--    Team section ends-->
+<!--   Portfolio section starts-->
+    <section class="portfolio" id="a-portfolio">
+        <div class="section__header portfolio__header wow zoomIn" data-wow-offset="200">
             <div class="container">
                 <div class="row">
                     <div class="section__header--descr col-lg-12">
@@ -181,50 +195,52 @@
         <div class="portfolio__items">
             <div class="container-fluid">
                 <div class="row">
-                    <a href="#" class="portfolio__items--item item--1 col-4 col-lg-2">
+                    <a href="#" class="portfolio__items--item item--1 col-4 col-lg-2 wow flipInX" data-wow-offset="200">
                         <div class="item--eye"> <span>Check out work!</span> </div>
                     </a>
-                    <a href="#" class="portfolio__items--item item--2 col-4 col-lg-2">
+                    <a href="#" class="portfolio__items--item item--2 col-4 col-lg-2 wow flipInX" data-wow-offset="200">
                         <div class="item--eye"> <span>Check out work!</span> </div>
                     </a>
-                    <a href="#" class="portfolio__items--item item--3 col-4 col-lg-2">
+                    <a href="#" class="portfolio__items--item item--3 col-4 col-lg-2 wow flipInX" data-wow-offset="200">
                         <div class="item--eye"> <span>Check out work!</span> </div>
                     </a>
-                    <a href="#" class="portfolio__items--item item--4 col-4 col-lg-2">
+                    <a href="#" class="portfolio__items--item item--4 col-4 col-lg-2 wow flipInX" data-wow-offset="200">
                         <div class="item--eye"> <span>Check out work!</span> </div>
                     </a>
-                    <a href="#" class="portfolio__items--item item--5 col-4 col-lg-2">
+                    <a href="#" class="portfolio__items--item item--5 col-4 col-lg-2 wow flipInX" data-wow-offset="200">
                         <div class="item--eye"> <span>Check out work!</span> </div>
                     </a>
-                    <a href="#" class="portfolio__items--item item--6 col-4 col-lg-2">
+                    <a href="#" class="portfolio__items--item item--6 col-4 col-lg-2 wow flipInX" data-wow-offset="200">
                         <div class="item--eye"> <span>Check out work!</span> </div>
                     </a>
                 </div>
                 <div class="row">
-                    <a href="#" class="portfolio__items--item item--6 col-4 col-lg-2">
+                    <a href="#" class="portfolio__items--item item--6 col-4 col-lg-2 wow flipInX" data-wow-offset="200">
                         <div class="item--eye"> <span>Check out work!</span> </div>
                     </a>
-                    <a href="#" class="portfolio__items--item item--5 col-4 col-lg-2">
+                    <a href="#" class="portfolio__items--item item--5 col-4 col-lg-2 wow flipInX" data-wow-offset="200">
                         <div class="item--eye"> <span>Check out work!</span> </div>
                     </a>
-                    <a href="#" class="portfolio__items--item item--4 col-4 col-lg-2">
+                    <a href="#" class="portfolio__items--item item--4 col-4 col-lg-2 wow flipInX" data-wow-offset="200">
                         <div class="item--eye"> <span>Check out work!</span> </div>
                     </a>
-                    <a href="#" class="portfolio__items--item item--3 col-4 col-lg-2">
+                    <a href="#" class="portfolio__items--item item--3 col-4 col-lg-2 wow flipInX" data-wow-offset="200">
                         <div class="item--eye"> <span>Check out work!</span> </div>
                     </a>
-                    <a href="#" class="portfolio__items--item item--2 col-4 col-lg-2">
+                    <a href="#" class="portfolio__items--item item--2 col-4 col-lg-2 wow flipInX" data-wow-offset="200">
                         <div class="item--eye"> <span>Check out work!</span> </div>
                     </a>
-                    <a href="#" class="portfolio__items--item item--1 col-4 col-lg-2">
+                    <a href="#" class="portfolio__items--item item--1 col-4 col-lg-2 wow flipInX" data-wow-offset="200">
                         <div class="item--eye"> <span>Check out work!</span> </div>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="brands" id="brands">
-        <div class="section__header brands__header">
+    <!--   Portfolio section starts-->
+<!--    Brand section starts-->
+    <section class="brands" id="a-brands">
+        <div class="section__header brands__header wow zoomIn" data-wow-offset="200">
             <div class="container">
                 <div class="row">
                     <div class="section__header--descr col-lg-12">
@@ -238,7 +254,7 @@
         </div>
         <div class="brands__items">
             <div class="container">
-                <div class="row">
+                <div class="row wow bounceInLeft" data-wow-offset="200">
                     <div class="brands__items--item brand--1 col-4 col-lg-2"></div>
                     <div class="brands__items--item brand--2 col-4 col-lg-2"></div>
                     <div class="brands__items--item brand--3 col-4 col-lg-2"></div>
@@ -246,7 +262,7 @@
                     <div class="brands__items--item brand--5 col-4 col-lg-2"></div>
                     <div class="brands__items--item brand--6 col-4 col-lg-2"></div>
                 </div>
-                <div class="row">
+                <div class="row wow bounceInRight" data-wow-offset="200">
                     <div class="brands__items--item brand--7 col-4 col-lg-2"></div>
                     <div class="brands__items--item brand--8 col-4 col-lg-2"></div>
                     <div class="brands__items--item brand--9 col-4 col-lg-2"></div>
@@ -254,7 +270,7 @@
                     <div class="brands__items--item brand--11 col-4 col-lg-2"></div>
                     <div class="brands__items--item brand--12 col-4 col-lg-2"></div>
                 </div>
-                <div class="row">
+                <div class="row wow bounceInLeft" data-wow-offset="200">
                     <div class="brands__items--item brand--13 col-4 col-lg-2"></div>
                     <div class="brands__items--item brand--14 col-4 col-lg-2"></div>
                     <div class="brands__items--item brand--15 col-4 col-lg-2"></div>
@@ -262,7 +278,7 @@
                     <div class="brands__items--item brand--17 col-4 col-lg-2"></div>
                     <div class="brands__items--item brand--18 col-4 col-lg-2"></div>
                 </div>
-                <div class="row">
+                <div class="row wow bounceInRight" data-wow-offset="200">
                     <div class="brands__items--item brand--19 col-4 col-lg-2"></div>
                     <div class="brands__items--item brand--20 col-4 col-lg-2"></div>
                     <div class="brands__items--item brand--21 col-4 col-lg-2"></div>
@@ -273,18 +289,20 @@
             </div>
         </div>
     </section>
+    <!--    Brand section ends-->
+<!--    Footer starts-->
     <footer class="footer" id="footer">
         <div class="container">
             <div class="row">
-                <div class="footer__item col-lg-4">
+                <div class="footer__item col-lg-4 wow boucne inUp" data-wow-offset="100">
                     <h3>Our team</h3>
                     <div class="footetr__item--descr">We are the best company in the entire world</div>
                 </div>
-                <div class="footer__item col-lg-4">
+                <div class="footer__item col-lg-4 wow boucne inUp" data-wow-offset="100">
                     <h3>About</h3>
                     <div class="footetr__item--descr">We are the best company in the entire world</div>
                 </div>
-                <div class="footer__item col-lg-4">
+                <div class="footer__item col-lg-4 wow boucne inUp" data-wow-offset="100">
                     <h3>Contact</h3>
                     <div class="footetr__item--descr">We are the best bestcomp@com +380989898988</div>
                 </div>
@@ -296,7 +314,12 @@
             </div>
         </div>
     </footer>
+<!--    Footer ends-->
     <script src="libs/jquery.min.js"></script>
+    <script src="libs/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="script/main.js"></script>
 </body>
 
